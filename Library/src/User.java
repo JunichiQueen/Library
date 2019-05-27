@@ -1,22 +1,23 @@
 import java.util.ArrayList;
 
 public class User implements CheckInable, CheckOutable {
-	private String ID;
+	private static int counter = 1;
+	private int ID;
 	private String name;
 	private String address;
 	ArrayList<Media> borrowed = new ArrayList<Media>();
 
-	public User(String ID, String name, String address) {
-		this.ID = ID;
+	public User(String name, String address) {
+		this.ID = counter++;
 		this.name = name;
 		this.address = address;
 	}
 	
-	public String getID() {
+	public int getID() {
 		return ID;
 	}
 
-	public String getName() {
+	public String getTheName() {
 		return name;
 	}
 
@@ -24,7 +25,7 @@ public class User implements CheckInable, CheckOutable {
 		return address;
 	}
 
-	public void setID(String ID) {
+	public void setID(int ID) {
 		this.ID = ID;
 	}
 

@@ -8,9 +8,9 @@ public class App {
 		person.addItem(seaOfRust, neuromancer, burningChrome);
 		System.out.println(person.getShelf());
 
-		User tim = new User("1", "Jim", "Fake Street");
-		User cat = new User("2", "Cat", "Fib Avenue");
-		User josh = new User("1", "Josh", "Lie Lane");
+		User tim = new User("Jim", "Fake Street");
+		User cat = new User("Cat", "Fib Avenue");
+		User josh = new User("Josh", "Lie Lane");
 
 		Administrator admin = new Administrator();
 		admin.registerPerson(tim, cat, josh);

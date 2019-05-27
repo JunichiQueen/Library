@@ -15,7 +15,7 @@ public class Administrator extends Librarian {
 	@Override
 	public void updatePerson(String inputName, String address) {
 		for (User u : getRegistry()) {
-			if (u.getClass().getTheName().equals(inputName)) {
+			if (u.getClass().getName().equals(inputName)) {
 				u.setAddress(address);
 			}
 
